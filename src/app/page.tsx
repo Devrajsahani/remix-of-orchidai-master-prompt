@@ -4,12 +4,14 @@ import { motion } from 'framer-motion';
 import { Shield, Users, BarChart3, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import ParticleBackground from '@/components/ParticleBackground';
+import DustBackground from '@/components/DustBackground';
 import LiveFusionMonitor from '@/components/LiveFusionMonitor';
-import ScrollyTellingHub from '@/components/ScrollyTellingHub';
+import OrbitalFusionHub from '@/components/OrbitalFusionHub';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 overflow-hidden">
+      <DustBackground />
       <ParticleBackground />
       
       <div className="relative z-10">
@@ -117,21 +119,14 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Interactive Fusion Hub - Scrolly-Telling */}
+          {/* New Orbital Fusion Hub */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
             className="mb-20">
 
-            <h3 className="text-3xl font-bold text-center mb-8">
-              How We Predict Accidents: The Fusion Engine
-            </h3>
-            <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
-              Scroll through to see how our AI-powered system combines multiple data sources
-              for predictive safety intelligence.
-            </p>
-            <ScrollyTellingHub />
+            <OrbitalFusionHub />
           </motion.div>
         </div>
 

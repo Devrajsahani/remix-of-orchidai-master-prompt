@@ -192,7 +192,8 @@ export default function LiveFusionMonitor() {
 
         {/* RIGHT: Live Worker Grid */}
         <div className="space-y-4">
-          <h3 className="text-xs font-mono text-slate-400 mb-6 tracking-wider">LIVE WORKER GRID</h3>
+          <h3 className="text-xs font-mono text-slate-400 mb-2 tracking-widest uppercase">PLANT-WIDE MONITORING</h3>
+          <h3 className="text-xs font-mono text-slate-400 mb-6 tracking-wider">LIVE RISK OUTPUT</h3>
           
           <div className="grid grid-cols-10 gap-2">
             {dots.map((dot) => (
