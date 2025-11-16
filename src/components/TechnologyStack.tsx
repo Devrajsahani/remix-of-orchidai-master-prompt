@@ -27,7 +27,7 @@ const techStack: TechCard[] = [
     title: 'AI Vision',
     description: 'Real-time PPE detection using YOLOv11n on edge devices.',
     modalTitle: 'AI Vision (YOLOv11n)',
-    modalContent: 'Our system connects to any USB or plant CCTV camera feed. A Raspberry Pi runs a highly-optimized YOLOv11n model that processes the video at 8-10 FPS. It detects 5 types of PPE (helmet, vest, gloves, boots, goggles). If a violation is detected, it instantly sends an alert to the fusion engine, which increases that worker's risk score.',
+    modalContent: "Our system connects to any USB or plant CCTV camera feed. A Raspberry Pi runs a highly-optimized YOLOv11n model that processes the video at 8-10 FPS. It detects 5 types of PPE (helmet, vest, gloves, boots, goggles). If a violation is detected, it instantly sends an alert to the fusion engine, which increases that worker's risk score.",
   },
   {
     id: 'smart-wearables',
@@ -35,7 +35,7 @@ const techStack: TechCard[] = [
     title: 'Smart Wearables',
     description: 'ESP32-powered badges with LoRa for vital signs monitoring.',
     modalTitle: 'Worker Smart Badge (ESP32 + LoRa)',
-    modalContent: 'Each worker wears a badge built on an ESP32 chip with a LoRa module for long-range, offline communication. It has built-in sensors to stream live vitals: a MAX30102 for heart rate/SpO2, a DHT22 for skin temperature/humidity, and an ADXL345 accelerometer for fall detection. It also includes a manual SOS button. All this data is fused to calculate the worker's physical state.',
+    modalContent: "Each worker wears a badge built on an ESP32 chip with a LoRa module for long-range, offline communication. It has built-in sensors to stream live vitals: a MAX30102 for heart rate/SpO2, a DHT22 for skin temperature/humidity, and an ADXL345 accelerometer for fall detection. It also includes a manual SOS button. All this data is fused to calculate the worker's physical state.",
   },
   {
     id: 'scada-integration',
@@ -43,7 +43,7 @@ const techStack: TechCard[] = [
     title: 'SCADA Integration',
     description: 'Direct connection to plant sensors via OPC-UA protocol.',
     modalTitle: 'Plant Infrastructure Integration (OPC-UA)',
-    modalContent: 'SurakshaMesh X connects directly to the plant's existing SCADA system. Our Node.js backend uses the node-opcua library to subscribe to critical sensor tags. This allows us to get real-time data on environmental hazards like ambient gas (MQ-2, MQ-135) or high-temperature zones (PT100). This data provides the context for a worker's risk (e.g., high heart rate + high gas levels = critical alert).',
+    modalContent: "SurakshaMesh X connects directly to the plant's existing SCADA system. Our Node.js backend uses the node-opcua library to subscribe to critical sensor tags. This allows us to get real-time data on environmental hazards like ambient gas (MQ-2, MQ-135) or high-temperature zones (PT100). This data provides the context for a worker's risk (e.g., high heart rate + high gas levels = critical alert).",
   },
   {
     id: 'blockchain',
@@ -51,7 +51,7 @@ const techStack: TechCard[] = [
     title: 'Blockchain Audit',
     description: 'Immutable incident logging on Polygon for accountability.',
     modalTitle: 'Blockchain Accountability (Polygon)',
-    modalContent: 'When a high-risk incident (risk > 80) is triggered, our backend uses ethers.js to call a smart contract on the Polygon testnet. This logs an immutable, tamper-proof record of the incident. When a supervisor clicks 'Acknowledge' on their dashboard, a second transaction is sent, logging the response time. This solves the problem of manipulated safety logs and creates a legal-grade audit trail.',
+    modalContent: "When a high-risk incident (risk > 80) is triggered, our backend uses ethers.js to call a smart contract on the Polygon testnet. This logs an immutable, tamper-proof record of the incident. When a supervisor clicks 'Acknowledge' on their dashboard, a second transaction is sent, logging the response time. This solves the problem of manipulated safety logs and creates a legal-grade audit trail.",
   },
 ];
 
