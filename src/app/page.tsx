@@ -6,7 +6,7 @@ import Link from 'next/link';
 import ParticleBackground from '@/components/ParticleBackground';
 import DustBackground from '@/components/DustBackground';
 import LiveFusionMonitor from '@/components/LiveFusionMonitor';
-import OrbitalFusionHub from '@/components/OrbitalFusionHub';
+import TechnologyStack from '@/components/TechnologyStack';
 
 export default function Home() {
   return (
@@ -119,14 +119,14 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* New Orbital Fusion Hub */}
+          {/* New Technology Stack Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
             className="mb-20">
 
-            <OrbitalFusionHub />
+            <TechnologyStack />
           </motion.div>
         </div>
 
